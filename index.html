@@ -168,37 +168,41 @@
 
         <section class="consultas">
 
-            <h5>Para realizar una consulta, por favor complete el siguiente formulario:</h1>
-                <form id="myForm" method="post">
-                    <label>
-                        <input placeholder="Nombre" name="name" type="text" name="" id="name" required>
+            <div>
+                <h5>Para realizar una consulta, por favor complete el siguiente formulario:</h5>
 
-                    </label>
-                    <label>
-                        <input placeholder="Apellido" name="lastname" type="text" name="" id="lastname" required>
+                <div class="container">
+                    <form action="action_page.php">
 
-                    </label>
-                    <label>
-                        <input placeholder="Correo" type="email" name="email" id="email" required>
+                        <label for="fname">Nombre</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
 
-                    </label>
-                    <label>
-                        <input placeholder="Celular" type="number" name="celular" id="celular" required>
+                        <label for="lname">Apellido</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Tu apellido...">
 
-                    </label>
-                    <label>
-                        <input placeholder="Consulta" type="text" name="consulta" id="consulta" required>
+                        <label for="lugar">¿Dónde desea tomar su clase/masaje?</label>
+                        <select id="lugar" name="lugar">
+                            <option value="estudio">En el estudio en Palermo</option>
+                            <option value="domicilio">En mi domicilio</option>
 
-                    </label>
-                    <select name="lugar" id="lugar" required>
-                        <option value="">¿Donde quieras tomar tu clase/masaje?</option>
-                        <option value="Palermo">En el estudio en Palermo</option>
-                        <option value="Domicilio">En mi casa</option>
-                    </select>
+                        </select>
 
-                    <button type="submit" onclick="">Enviar consulta</button>
+                        <label for="subject">Escriba a continuació su consulta:</label>
+                        <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
 
-                </form>
+                        <button type="submit">
+
+                            <a href="">Enviar consulta</a>
+
+                        </button>
+
+                    </form>
+                </div>
+
+
+
+            </div>
+
 
 
         </section>
