@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga con JohnnyMogo</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./estilos/estilos.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Barra de navegación -->
+        <nav>
+            <div class="inicio">
+                <a href="#">
+                    <!-- <img src="" alt="">  (LOGO)-->
+                    <span>Yoga con JohnnyMogo</span>
+                </a>
+
+            </div>
+
+            <div class="listaNav">
+
+                <div class="botonesNav">
+
+                    <div class="dropdown">
+                        <button>
+                            <a href="">Clases</a>
+                            <div class="dropdown-content">
+                                <a href="#">Yoga</a>
+                                <a href="#">Yogaterapia</a>
+                                <a href="#">AcroYoga</a>
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="botonesNav">
+                    <button>
+                        <a href="">Masaje Tailandés</a>
+                    </button>
+
+                </div>
+                <div class="botonesNav">
+                    <button>
+                        <a href="">Consultas</a>
+                    </button>
+
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Banner (colocar una imagen aluciba de fondo)-->
+
+        <section class="banner">
+
+            <div class="bannerText">
+
+                <h2>Yoga - AcroYoga - Masaje Tailandés</h2>
+                <p>En Palermo o a domicilio <br> Regalate o regala un momento de conexión, paz y presencia.</p>
+                <div>
+                    <a class="" href="">Quiero agendar una cita</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Clases -->
+
+        <section class="menuDeClases">
+
+            <div class="tituloClases">
+                <h5>Te ofrecemos clases de:</h5>
+            </div>
+
+            <div class="clases">
+                <div class="rotating-card yoga">
+                    <div class="card-side front">
+                        <div class="titulo">
+                            <h3>Yoga</h3>
+                        </div>
+
+                    </div>
+                    <div class="card-side back">
+                        <div class="descripcion">
+                            <span>Fortalecemos y flexibilizamos nuestro cuerpo físico mientras cultivamos
+                                la atención plena a través de movimientos conscientes y respiración enfocada.</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="rotating-card yogaterapia">
+                    <div class="card-side front">
+                        <div class="titulo">
+                            <h3>Yogaterapia</h3>
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="descripcion">
+                            <span>El yoga terapéutico te acompaña en tu proceso de recuperación, mejorando
+                                tu calidad de vida a través de movimientos y respiraciones conscientes. </span>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="rotating-card acroyoga">
+                    <div class="card-side front">
+                        <div class="titulo">
+                            <h3>Acroyoga</h3>
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="descripcion">
+                            <span>Combina la armonía del yoga, la emoción de las acrobacias y la
+                                profundidad de las artes terapéuticas. Trabajaremos la fuerza física y la destreza, al
+                                mismo
+                                tiempo que la confianza en ti mismo y en los demás.</span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <!-- Masaje Tailandés -->
+
+        <section class="masaje">
+
+            <div> Y si lo que buscas es un momento de relajación total... </div>
+
+            <div class="rotating-card masaje">
+                <div class="card-side front">
+                    <div class="titulo">
+                        <h3>Masaje Tailandés</h3>
+                    </div>
+                </div>
+                <div class="card-side back">
+                    <div class="descripcion">
+                        <span>El masaje tailandés es una antigua técnica terapéutica que combina estiramientos, presión
+                            y manipulación de tejidos para aliviar el estrés, mejorar la flexibilidad y promover el
+                            bienestar general. Se caracteriza por su enfoque en líneas de energía y puntos de presión
+                            específicos, utilizando manos, codos, rodillas y pies para aplicar presión y estirar el
+                            cuerpo de manera fluida y armoniosa.</span>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="consultas">
+
+            <h5>Para realizar una consulta, por favor complete el siguiente formulario:</h1>
+                <form id="myForm" method="post">
+                    <label>
+                        <input placeholder="Nombre" name="name" type="text" name="" id="name" required>
+
+                    </label>
+                    <label>
+                        <input placeholder="Apellido" name="lastname" type="text" name="" id="lastname" required>
+
+                    </label>
+                    <label>
+                        <input placeholder="Correo" type="email" name="email" id="email" required>
+
+                    </label>
+                    <label>
+                        <input placeholder="Celular" type="number" name="celular" id="celular" required>
+
+                    </label>
+                    <label>
+                        <input placeholder="Consulta" type="text" name="consulta" id="consulta" required>
+
+                    </label>
+                    <select name="lugar" id="lugar" required>
+                        <option value="">¿Donde quieras tomar tu clase/masaje?</option>
+                        <option value="Palermo">En el estudio en Palermo</option>
+                        <option value="Domicilio">En mi casa</option>
+                    </select>
+
+                    <button type="submit" onclick="">Enviar consulta</button>
+
+                </form>
+
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+        <ul class="listaFooter">
+
+            <li class="btnFooter">
+                <a href="">Instagram</a>
+            </li>
+            <li class="btnFooter">
+                <a href="">Whatsapp</a>
+            </li>
+
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>
