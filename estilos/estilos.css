@@ -29,7 +29,7 @@ nav {
     background: linear-gradient(to right top, #ffffffec, #ffffffd5), url(../imagenes/prueba.JPG);
     background-size: contain;
     background-attachment: fixed;
-    border: 1px solid black;
+    
 
     .inicio {
         border: 1px solid rgb(12, 203, 236);
@@ -92,7 +92,7 @@ nav {
     /* contenedor */
     margin-top: 75px;
     padding: 20px 0px;
-    border: 1px solid black;
+    
     /* disposicion de elementos dentro del contenedor */
     display: flex;
     flex-direction: column;
@@ -121,7 +121,7 @@ nav {
 
     .clases {
         padding: 20px 0px;
-        border: 1px solid black;
+      
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
         justify-items: center;
@@ -186,7 +186,6 @@ nav {
 
 .masaje {
     padding: 20px 0px;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,12 +215,10 @@ nav {
 
 .consultas {
     padding: 20px 0px;
-    border: 1px solid black;
 }
 
 .footer {
     padding: 20px 0px;
-    border: 1px solid black;
 }
 
 a {
@@ -229,6 +226,7 @@ a {
     text-decoration: none;
 }
 
+/* ATRIBUTOS DE LOS BOTONES */
 button {
     background: #9ab0c9;
 
@@ -279,6 +277,8 @@ button:hover:after {
     width: 100%;
     transition: 800ms ease all;
 }
+
+/* ATRIBUTOS DE LAS CARTAS */
 
 .rotating-card {
 
@@ -361,14 +361,17 @@ input[type=text], select, textarea {
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  padding: 12px 20px;
-  text-decoration: none;
-  background: transparent;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=mail]{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 

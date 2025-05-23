@@ -1,0 +1,32 @@
+.agendaTuClase {
+    /* contenedor */
+    margin-top: 75px;
+    padding: 20px 0px;
+    border: 1px solid black;
+    /* disposicion de elementos dentro del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* imagen de fondo */
+
+   
+
+
+    .descripcion {
+        border: 1px solid rgb(202, 236, 12);
+        padding: 30px 20px;
+        background-color: white;
+    }
+}
+
+
+ .yoga {
+
+        background: linear-gradient(to right top, #ebecef00, #d1bea800), url(../imagenes/Yoga\ front.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+
+    }
