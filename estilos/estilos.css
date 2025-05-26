@@ -40,7 +40,7 @@ nav {
     .listaNav {
         border: 1px solid rgb(12, 203, 236);
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         align-items: center;
 
@@ -224,10 +224,6 @@ nav {
     padding: 20px 0px;
 }
 
-.footer {
-    padding: 20px 0px;
-}
-
 a {
     text-decoration-color: none;
     text-decoration: none;
@@ -240,7 +236,7 @@ button {
     border: none;
     position: relative;
     height: 30px;
-    font-size: 0.7em;
+    font-size: 0.65em;
     padding: 0 2em;
     cursor: pointer;
     transition: 800ms ease all;
@@ -412,7 +408,6 @@ footer {
 
 /* Set a specific color for each brand */
 
-/* Facebook */
 .fa-instagram {
   background: #833ab4;
   background: linear-gradient(
@@ -422,8 +417,25 @@ footer {
   color: white;
 }
 
-/* Twitter */
 .fa-whatsapp {
   background: #25D366;
   color: white;
+}
+
+/* RESPONSIVIDAD PARA CELULARES */
+
+@media only screen and (max-width:750px) {
+
+    nav {
+        flex-direction: column;
+
+    }
+
+    .masajeCard {
+
+        .masaje {
+            width: 500px;
+        }
+    }
+
 }
