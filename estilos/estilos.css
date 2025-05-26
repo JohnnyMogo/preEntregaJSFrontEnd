@@ -11,7 +11,10 @@ body {
     background-attachment: fixed;
 }
 
-
+header {
+    padding: 0 0;
+    margin: 0 0;
+}
 
 nav {
 
@@ -25,7 +28,6 @@ nav {
     height: auto;
     font-size: 1.2rem;
     font-weight: 600;
-    flex-wrap: wrap;
     z-index: 10;
     background: linear-gradient(to right top, #ffffffec, #ffffffd5), url(../imagenes/prueba.JPG);
     background-size: contain;
@@ -41,7 +43,6 @@ nav {
         border: 1px solid rgb(12, 203, 236);
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
         align-items: center;
 
         .botonesNav {
@@ -209,12 +210,14 @@ nav {
 
             background: linear-gradient(to right top, #ebecef00, #d1bea800), url(../imagenes/masaje4.JPG);
             background-size: cover;
+            background-position: center;
         }
 
         .back {
 
             background: linear-gradient(to right top, #ebecef00, #d1bea800), url(../imagenes/masaje1.jpg);
             background-size: cover;
+            background-position: center;
         }
     }
 
@@ -237,7 +240,7 @@ button {
     position: relative;
     height: 30px;
     font-size: 0.65em;
-    padding: 0 2em;
+    padding: 0 1.5em;
     cursor: pointer;
     transition: 800ms ease all;
     outline: none;
@@ -429,8 +432,10 @@ footer {
     nav {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-left: 0;
         width: 100%;
+        padding: 0 0;
 
         .listaNav {
             justify-content: center;
@@ -446,7 +451,7 @@ footer {
     .masajeCard {
 
         .masaje {
-            width: 500px;
+            width: 80%;
         }
     }
 
