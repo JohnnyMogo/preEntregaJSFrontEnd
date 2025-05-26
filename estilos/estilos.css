@@ -35,12 +35,10 @@ nav {
     
 
     .inicio {
-        border: 1px solid rgb(12, 203, 236);
         padding: 10px 10px;
     }
 
     .listaNav {
-        border: 1px solid rgb(12, 203, 236);
         display: flex;
         justify-content: space-around;
         align-items: center;
