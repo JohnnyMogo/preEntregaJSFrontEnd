@@ -18,10 +18,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px 5px;
+    padding: 10px 10px;
     position: fixed;
     top: 0;
     width: 100%;
+    height: auto;
     font-size: 1.2rem;
     font-weight: 600;
     flex-wrap: wrap;
@@ -33,7 +34,7 @@ nav {
 
     .inicio {
         border: 1px solid rgb(12, 203, 236);
-        padding: 5px 10px;
+        padding: 10px 10px;
     }
 
     .listaNav {
@@ -41,6 +42,7 @@ nav {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
 
         .botonesNav {
             padding: 5px 10px;
@@ -90,7 +92,7 @@ nav {
 /* Se hizo uso de FlexBox para la disposición de los elementos */
 .banner {
     /* contenedor */
-    margin-top: 75px;
+    margin-top: 65px;
     padding: 20px 0px;
     
     /* disposicion de elementos dentro del contenedor */
@@ -104,6 +106,7 @@ nav {
     background-size: cover;
     background-position: center;
     height: 90vh;
+    width: 100%;
 
     .bannerText {
         border: 1px solid rgb(202, 236, 12);
@@ -118,6 +121,10 @@ nav {
 
     display: flex;
     flex-direction: column;
+    text-align: center;
+    .tituloClases {
+        margin-top: 40px;
+    }
 
     .clases {
         padding: 20px 0px;
@@ -184,7 +191,7 @@ nav {
 }
 
 
-.masaje {
+.masajeCard {
     padding: 20px 0px;
     display: flex;
     flex-direction: column;
@@ -232,8 +239,8 @@ button {
 
     border: none;
     position: relative;
-    height: 40px;
-    font-size: 1em;
+    height: 30px;
+    font-size: 0.7em;
     padding: 0 2em;
     cursor: pointer;
     transition: 800ms ease all;
@@ -288,6 +295,7 @@ button:hover:after {
     position: relative;
     box-shadow: none;
     background: none;
+    margin: 30px;
 
 
     .card-side {
@@ -348,6 +356,7 @@ button:hover:after {
     transform: rotateY(0deg);
 }
 
+/* FORMULARIO */
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -380,4 +389,41 @@ input[type=mail]{
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    float: right;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-instagram {
+  background: #833ab4;
+  background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
+  color: white;
+}
+
+/* Twitter */
+.fa-whatsapp {
+  background: #25D366;
+  color: white;
 }
