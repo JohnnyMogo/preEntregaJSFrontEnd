@@ -254,6 +254,10 @@ button {
     a {
         color: #fff;
     }
+    span {
+        color: #fff;
+        font-size: large;
+    }
 }
 
 button:hover {
@@ -261,6 +265,9 @@ button:hover {
 
 
     a {
+        color: #9ab0c9;
+    }
+    span {
         color: #9ab0c9;
     }
 }
@@ -399,7 +406,7 @@ input[type=mail]{
 
 /* Add a background color and some padding around the form */
 .container {
-
+margin-top: 30px;
   border-radius: 5px;
   background-color: #f2f2f277;
   padding: 20px;
