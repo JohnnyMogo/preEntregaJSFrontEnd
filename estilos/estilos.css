@@ -23,6 +23,8 @@ h1 {
     text-shadow: 1px 1px #2e3457;
 }
 
+
+
 nav {
 
     display: flex;
@@ -361,6 +363,14 @@ button:hover:after {
 
 /* FORMULARIO */
 
+.consultas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -389,8 +399,9 @@ input[type=mail]{
 
 /* Add a background color and some padding around the form */
 .container {
+
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f2f2f277;
   padding: 20px;
 }
 
