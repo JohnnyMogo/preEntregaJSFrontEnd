@@ -41,7 +41,7 @@ nav {
     background: linear-gradient(to right top, #ffffffec, #ffffffd5), url(../imagenes/prueba.JPG);
     background-size: contain;
     background-attachment: fixed;
-    
+
 
     .inicio {
         padding: 10px 10px;
@@ -102,7 +102,7 @@ nav {
     /* contenedor */
     margin-top: 65px;
     padding: 20px 0px;
-    
+
     /* disposicion de elementos dentro del contenedor */
     display: flex;
     flex-direction: column;
@@ -129,19 +129,25 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
+
     .tituloClases {
         margin-top: 40px;
     }
 
+    
+
     .clases {
         padding: 20px 0px;
-      
+
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
         justify-items: center;
 
 
+
+
         .yoga {
+
 
 
             .front {
@@ -229,6 +235,106 @@ nav {
 
 }
 
+.menuCarrito {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .tituloCarrito {
+        margin-top: 40px;
+    }
+
+    .items {
+        padding: 20px 0px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+        justify-items: center;
+
+        .rotating-card {
+        height: 200px;
+        width: 200px;
+        }
+
+
+        .claseSuelta {
+
+            .front {
+
+                background: linear-gradient(to right top, #ebecef00, #d1bea800), url(../imagenes/Yoga\ front.jpg);
+                background-size: cover;
+            }
+
+            .back {
+
+                background: linear-gradient(to right top, #33727ada, #988ef000), url(../imagenes/fondoBannerDef.JPG);
+                background-size: cover;
+            }
+        }
+
+        .cuatroClases {
+
+
+            .front {
+
+                background: linear-gradient(to right top, #ebecef00, #d1bea800), url(../imagenes/yogaterapia\ front.jpg);
+                background-size: cover;
+            }
+
+            .back {
+
+                background: linear-gradient(to right top, #33727ada, #988ef000), url(../imagenes/fondoBannerDef.JPG);
+                background-size: cover;
+            }
+        }
+
+        .ochoClases {
+
+
+            .front {
+
+                background: linear-gradient(to right top, #ebecef00, #d1bea800), url(../imagenes/acroyoga\ front.jpg);
+                background-size: cover;
+            }
+
+            .back {
+
+                background: linear-gradient(to right top, #33727ada, #988ef000), url(../imagenes/fondoBannerDef.JPG);
+                background-size: cover;
+            }
+        }
+
+        .masaje {
+
+
+            .front {
+
+                background: linear-gradient(to right top, #ebecef00, #d1bea800), url(../imagenes/masaje2.JPG);
+                background-size: cover;
+            }
+
+            .back {
+
+                background: linear-gradient(to right top, #33727ada, #988ef000), url(../imagenes/fondoBannerDef.JPG);
+                background-size: cover;
+            }
+        }
+
+
+
+
+    }
+
+
+}
+
+.resenias {
+
+    margin-top: 100px;
+
+}
+
 .consultas {
     padding: 20px 0px;
 }
@@ -254,6 +360,7 @@ button {
     a {
         color: #fff;
     }
+
     span {
         color: #fff;
         font-size: large;
@@ -267,6 +374,7 @@ button:hover {
     a {
         color: #9ab0c9;
     }
+
     span {
         color: #9ab0c9;
     }
@@ -375,41 +483,59 @@ button:hover:after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=mail]{
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type=mail] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 
 /* Add a background color and some padding around the form */
 .container {
-margin-top: 30px;
-  border-radius: 5px;
-  background-color: #f2f2f277;
-  padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #f2f2f277;
+    padding: 20px;
 }
 
 /* FOOTER */
@@ -419,32 +545,30 @@ footer {
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 /* Set a specific color for each brand */
 
 .fa-instagram {
-  background: #833ab4;
-  background: linear-gradient(
-    to right,
-    #833ab4,#fd1d1d,#fcb045
-  );
-  color: white;
+    background: #833ab4;
+    background: linear-gradient(to right,
+            #833ab4, #fd1d1d, #fcb045);
+    color: white;
 }
 
 .fa-whatsapp {
-  background: #25D366;
-  color: white;
+    background: #25D366;
+    color: white;
 }
 
 /* RESPONSIVIDAD PARA CELULARES */
@@ -461,9 +585,10 @@ footer {
 
         .listaNav {
             justify-content: center;
+
             .botonesNav {
                 padding: 0px 5px;
-            
+
             }
         }
 
